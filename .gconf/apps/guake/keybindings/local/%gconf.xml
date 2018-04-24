@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="decrease_transparency" mtime="1485310901" type="string">
+		<stringvalue>&lt;Primary&gt;&lt;Alt&gt;equal</stringvalue>
+	</entry>
+	<entry name="increase_transparency" mtime="1485310898" type="string">
+		<stringvalue>&lt;Primary&gt;&lt;Alt&gt;minus</stringvalue>
+	</entry>
+</gconf>

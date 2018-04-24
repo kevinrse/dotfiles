@@ -1,0 +1,9 @@
+~/dotfiles is the place for dotfiles I want to sync across machines.
+
+Baseline files (shared across all machines) go here
+
+machine-specific files go in their own folder (neurofunk, microfunk, hypocentre)
+
+SECURE folder should contain files that contain credentials that can't be made public.
+
+setup_dotfile_symlinks.sh is as the name implies. Keep this up to date so it's easier to set up new machines in future.

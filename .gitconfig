@@ -1,0 +1,14 @@
+[user]
+	email = kevin.foster@pg.canterbury.ac.nz
+	name = Kevin Foster
+
+
+# Use Meld for diff stuff.
+# More information can be found here. https://stackoverflow.com/questions/34119866/setting-up-and-using-meld-as-your-git-difftool-and-mergetool
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
+
