@@ -68,7 +68,7 @@ alias -g kn="kmf76@neurofunk"
 #source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
 
 #  fortune quotes
-# fortune 30% ~/Dropbox/quotes 70% /usr/share/games/fortunes/ | cowsay 
+# fortune 30% ~/Dropbox/quotes.txt 70% /usr/share/games/fortunes/ | cowsay 
 
 # added by Anaconda3 4.3.0 installer
 export PATH="/home/kmf76/anaconda3/bin:$PATH"
