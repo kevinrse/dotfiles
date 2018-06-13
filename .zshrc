@@ -136,5 +136,18 @@ zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f
 alias Vs="task rc:~/VsMap/.taskrc"
 
 
+
+
+# Need a tweak in manjaro/arch for home and end keys to work properly:
+# https://wiki.archlinux.org/index.php/Home_and_End_keys_not_working#Zsh
+bindkey "${terminfo[khome]}" beginning-of-line
+bindkey "${terminfo[kend]}" end-of-line
+
+
+
+
+
+
+
 # Choose a machine-specific configuration file and source it:
 . ~/dotfiles/$(hostname)/.zshrc
