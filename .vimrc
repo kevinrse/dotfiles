@@ -116,3 +116,9 @@ filetype plugin indent on "enables smart indentation
 " enabling omni-completion CTRL-X CTRL-O
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
+
+" listchars - what characters to use for whitespace characters when using :set list
+"set showbreak=↪\ 
+"set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+set listchars=tab:\|_,trail:_,extends:>,precedes:<,nbsp:~
+set showbreak=\\ " [bonus]
