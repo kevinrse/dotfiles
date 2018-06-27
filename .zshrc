@@ -43,10 +43,35 @@ zstyle :compinstall filename '/home/kmf76/.zshrc'
 zstyle ':completion:*' menu select
 
 
-
-# KF fix ctrl+left ctrl+right behavior
+# Need a tweak in arch for home and end keys to work properly
+# (as well as insert, delete, pageup, pagedown, perhaps others...)
+# https://wiki.archlinux.org/index.php/Home_and_End_keys_not_working#Zsh
+bindkey "^[[2~" overwrite-mode # Ins
+bindkey "^[[3~" delete-char # Del
+bindkey "^[[5~" beginning-of-history #PageUp
+bindkey "^[[6~" end-of-history #PageDown
+## ctrl+left and ctrl+right behavior:
 bindkey ";5C" forward-word
 bindkey ";5D" backward-word
+
+# but.... pageup and pagedown key escape sequences 
+# are DIFFERENT depending on whether I'm in a tmux session or not!
+# To determine if tmux is running, examine values of $TERM and $TMUX.
+if [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; then
+  bindkey "^[[1~" beginning-of-line
+  bindkey "^[[4~" end-of-line
+  #bindkey "${terminfo[khome]}" beginning-of-line  # these two work within tmux, but not outside of tmux.
+  #bindkey "${terminfo[kend]}" end-of-line         # these two work within tmux, but not outside of tmux.
+else
+  # Assign these keys if tmux is NOT being used:
+  bindkey "^[[H" beginning-of-line
+  bindkey "^[[F" end-of-line
+fi
+
+
+
+
+
 
 # KF add zmv utility
 autoload -U zmv
@@ -136,12 +161,6 @@ zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f
 alias Vs="task rc:~/VsMap/.taskrc"
 
 
-
-
-# Need a tweak in manjaro/arch for home and end keys to work properly:
-# https://wiki.archlinux.org/index.php/Home_and_End_keys_not_working#Zsh
-bindkey "${terminfo[khome]}" beginning-of-line
-bindkey "${terminfo[kend]}" end-of-line
 
 
 
