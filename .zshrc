@@ -70,8 +70,8 @@ alias -g kn="kmf76@neurofunk"
 #  fortune quotes
 # fortune 30% ~/Dropbox/quotes.txt 70% /usr/share/games/fortunes/ | cowsay 
 
-# added by Anaconda3 4.3.0 installer
-export PATH="/home/kmf76/anaconda3/bin:$PATH"
+# Anaconda
+export PATH="/home/kmf76/anaconda2/bin:$PATH"
 
 # Prevent accidental hanging in terminal from habitual CTRL-S usage
 # see here: http://unix.stackexchange.com/questions/72086/ctrl-s-hang-terminal-emulator
