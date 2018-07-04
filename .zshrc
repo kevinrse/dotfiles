@@ -54,7 +54,7 @@ bindkey "^[[6~" end-of-history #PageDown
 bindkey ";5C" forward-word
 bindkey ";5D" backward-word
 
-# but.... pageup and pagedown key escape sequences 
+# but.... home and end key escape sequences 
 # are DIFFERENT depending on whether I'm in a tmux session or not!
 # To determine if tmux is running, examine values of $TERM and $TMUX.
 if [ "$TERM" = "screen" ] && [ -n "$TMUX" ]; then
