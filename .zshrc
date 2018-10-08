@@ -159,6 +159,7 @@ zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f
 
 
 alias Vs="task rc:~/VsMap/.taskrc"
+alias pw="task rc:~/PwaveMethod/.taskrc"
 
 
 
