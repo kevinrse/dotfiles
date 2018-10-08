@@ -97,6 +97,8 @@ alias -g kn="kmf76@neurofunk"
 
 # Anaconda
 export PATH="/home/kmf76/anaconda2/bin:$PATH"
+# Adding an alias for P-wave receiver function research
+alias saP="source activate Pwave"
 
 # Prevent accidental hanging in terminal from habitual CTRL-S usage
 # see here: http://unix.stackexchange.com/questions/72086/ctrl-s-hang-terminal-emulator
@@ -163,7 +165,9 @@ alias pw="task rc:~/PwaveMethod/.taskrc"
 
 
 
-
+# This is for Rust. 
+# To uninstall rust: rustup self uninstall
+export PATH="$HOME/.cargo/bin:$PATH"
 
 
 
