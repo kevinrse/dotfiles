@@ -68,6 +68,10 @@ else
   bindkey "^[[F" end-of-line
 fi
 
+# Instead of ctrl-R (the default), make "up" and "down" keys
+# search through command history, filtered by beginning of line.
+bindkey "Up" history-beginning-search-backward
+bindkey "Down" history-beginning-search-forward
 
 
 
@@ -95,6 +99,9 @@ alias -g kn="kmf76@neurofunk"
 #  fortune quotes
 # fortune 30% ~/Dropbox/quotes.txt 70% /usr/share/games/fortunes/ | cowsay 
 
+# Anaconda
+#export PATH="/home/kmf76/anaconda2/bin:$PATH"
+alias saP="source activate Pwave"
 
 # Prevent accidental hanging in terminal from habitual CTRL-S usage
 # see here: http://unix.stackexchange.com/questions/72086/ctrl-s-hang-terminal-emulator
