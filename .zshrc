@@ -99,10 +99,6 @@ alias -g kn="kmf76@neurofunk"
 #  fortune quotes
 # fortune 30% ~/Dropbox/quotes.txt 70% /usr/share/games/fortunes/ | cowsay 
 
-# Anaconda
-#export PATH="/home/kmf76/anaconda2/bin:$PATH"
-alias saP="source activate Pwave"
-
 # Prevent accidental hanging in terminal from habitual CTRL-S usage
 # see here: http://unix.stackexchange.com/questions/72086/ctrl-s-hang-terminal-emulator
 stty -ixon
@@ -170,7 +166,7 @@ alias pw="task rc:~/PwaveMethod/.taskrc"
 
 # This is for Rust. 
 # To uninstall rust: rustup self uninstall
-export PATH="$HOME/.cargo/bin:$PATH"
+# export PATH="$HOME/.cargo/bin:$PATH"
 
 
 
