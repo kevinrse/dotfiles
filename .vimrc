@@ -97,9 +97,6 @@ nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 "put from one Vim instance to another.
 set clipboard=unnamedplus
 
-" Turn on highlighting of matching brackets/parents
-DoMatchParen
-
 " Set dictionary for autocompletion using CTRL-X CTRL-K
 set dictionary+=/usr/share/dict/american-english
 
