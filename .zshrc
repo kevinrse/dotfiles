@@ -121,7 +121,7 @@ autoload -U zcalc
 # info: https://www.if-not-true-then-false.com/2012/solarized-linux/
 # The installation script for this: gits/gnome-terminal-colors-solarized
 # ("eval" line below added manually).
-eval `dircolors /home/kmf76/.dir_colors/dircolors`
+#eval `dircolors /home/kmf76/.dir_colors/dircolors` # commented out because I don't like solarized anymore, ls output has too much dark blue...
 
 #read documents
 alias -s pdf=acroread
