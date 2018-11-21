@@ -68,6 +68,10 @@ else
   bindkey "^[[F" end-of-line
 fi
 
+# Instead of ctrl-R (the default), make "up" and "down" keys
+# search through command history, filtered by beginning of line.
+bindkey "Up" history-beginning-search-backward
+bindkey "Down" history-beginning-search-forward
 
 
 
@@ -95,7 +99,6 @@ alias -g kn="kmf76@neurofunk"
 #  fortune quotes
 # fortune 30% ~/Dropbox/quotes.txt 70% /usr/share/games/fortunes/ | cowsay 
 
-
 # Prevent accidental hanging in terminal from habitual CTRL-S usage
 # see here: http://unix.stackexchange.com/questions/72086/ctrl-s-hang-terminal-emulator
 stty -ixon
@@ -118,7 +121,7 @@ autoload -U zcalc
 # info: https://www.if-not-true-then-false.com/2012/solarized-linux/
 # The installation script for this: gits/gnome-terminal-colors-solarized
 # ("eval" line below added manually).
-eval `dircolors /home/kmf76/.dir_colors/dircolors`
+#eval `dircolors /home/kmf76/.dir_colors/dircolors` # commented out because I don't like solarized anymore, ls output has too much dark blue...
 
 #read documents
 alias -s pdf=acroread
@@ -163,7 +166,7 @@ alias pw="task rc:~/PwaveMethod/.taskrc"
 
 # This is for Rust. 
 # To uninstall rust: rustup self uninstall
-export PATH="$HOME/.cargo/bin:$PATH"
+# export PATH="$HOME/.cargo/bin:$PATH"
 
 
 

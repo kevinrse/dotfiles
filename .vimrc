@@ -83,7 +83,7 @@ set nonumber
 "   https://www.if-not-true-then-false.com/2012/solarized-linux/
 syntax enable
 set background=dark
-colorscheme solarized
+" colorscheme solarized            " commented out because I don't like solarized... I have to set it up manually and this is a PITA
 
 
 
