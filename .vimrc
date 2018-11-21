@@ -32,6 +32,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 " KF Supertab
 Plugin 'ervandew/supertab'
+" KF Rust
+Plugin 'rust-lang/rust.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
