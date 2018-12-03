@@ -106,6 +106,14 @@ set dictionary+=/usr/share/dict/american-english
 " ...and this thesaurus is from https://github.com/hunspell/mythes
 set thesaurus+=~/gits/mythes/th_en_US_new.dat
 
+" This is for highlighting misspellings. (At time of this writing
+" the american english dictionary doesn't seem to care about words
+" such as "summarised" which afaik is not OK in american english
+" may want to return to this issue
+"
+" Command:
+"set spell spelllang=en_us
+
 " tab settings
 set tabstop=2
 set expandtab
