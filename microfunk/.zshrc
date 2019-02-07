@@ -18,6 +18,12 @@ export PATH="$HOME/.cargo/bin:$PATH"
 #[[ $- = *i* ]] && source ~/gits/liquidprompt/liquidprompt
 
 
+
+# Discovered that some gems require Ruby version greater than the repository ver\sion.
+# Accordingly I used rbenv/ruby-build to build the latest stable version, 2.6.1.
+# It's located in ~/local/ruby-2.6.1/
+export PATH="$HOME/local/ruby-2.6.1/bin:$PATH"
+
 # Installing Ruby for Jekyll
 # https://jekyllrb.com/docs/installation/ubuntu/
 #   > It is best to avoid installing Ruby Gems as the root user. Therefore, 
