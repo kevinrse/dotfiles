@@ -5,8 +5,8 @@
 export PATH="/usr/local/Geopsy.org/bin:$PATH"
 echo neurofunk
 
-# Anaconda
-export PATH="/home/kmf76/anaconda2/bin:$PATH"
+# Miniconda
+source /home/kmf76/miniconda2/etc/profile.d/conda.sh
 # Adding an alias for P-wave receiver function research
 alias saP="source activate Pwave"
 
