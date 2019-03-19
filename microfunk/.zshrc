@@ -5,10 +5,11 @@ export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 
 
-# Anaconda
-export PATH="/home/kmf76/anaconda2/bin:$PATH"
+# Miniconda
+source /home/kmf76/miniconda2/etc/profile.d/conda.sh
+
 # Adding an alias for P-wave receiver function research
-alias saP="source activate Pwave"
+alias saP="conda activate Pwave"
 
 # Rust language rustlang cargo path
 export PATH="$HOME/.cargo/bin:$PATH"
