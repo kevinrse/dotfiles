@@ -33,3 +33,6 @@ export PATH="$HOME/local/ruby-2.6.1/bin:$PATH"
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
 
+# Holochain
+# https://developer.holochain.org/start.html
+export PATH="/home/kmf76/holochain:$PATH"
