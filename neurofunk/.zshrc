@@ -30,3 +30,8 @@ export PATH="$HOME/local/ruby-2.6.1/bin:$PATH"
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
+
+# TauP toolkit (Crotwell et al. 1999, Seismological Research LetterS) - tools for computing earthquake travel times.
+export TAUP_HOME="$HOME/TauP-2.4.5"
+export PATH="$TAUP_HOME/bin:$PATH"
+
