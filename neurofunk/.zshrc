@@ -9,6 +9,7 @@ echo neurofunk
 source /home/kmf76/miniconda2/etc/profile.d/conda.sh
 # Adding an alias for P-wave receiver function research
 alias saP="conda activate Pwave"
+alias caa="conda activate arts"
 
 # Rust language rustlang cargo path
 export PATH="$HOME/.cargo/bin:$PATH"
