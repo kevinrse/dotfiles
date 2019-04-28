@@ -34,6 +34,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'ervandew/supertab'
 " KF Rust
 Plugin 'rust-lang/rust.vim'
+" KF YouCompleteMe (Python)
+Plugin 'Valloric/YouCompleteMe'
+" KF vim-lastplace  -  remember cursor position
+Plugin 'farmergreg/vim-lastplace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
