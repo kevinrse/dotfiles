@@ -34,6 +34,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'ervandew/supertab'
 " KF Rust
 Plugin 'rust-lang/rust.vim'
+" KF YouCompleteMe (python)
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -129,3 +131,16 @@ set omnifunc=syntaxcomplete#Complete
 "set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
 set listchars=tab:\|_,trail:_,extends:>,precedes:<,nbsp:~
 set showbreak=\\ " [bonus]
+
+
+
+set ignorecase "KF default case-insensitive searching
+
+
+" KF YouCompleteMe options..................................
+" (see docs)
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+" Global python config locator file:
+let g:ycm_global_ycm_extra_conf = '/home/kmf76/dotfiles/.ycm_extra_conf.py'
+
