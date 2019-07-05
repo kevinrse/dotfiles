@@ -146,3 +146,44 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 " Global python config locator file:
 let g:ycm_global_ycm_extra_conf = '/home/kmf76/dotfiles/.ycm_extra_conf.py'
 
+
+
+
+" ############################################################################################################
+" KF xml folding things:
+" https://stackoverflow.com/questions/32154285/folding-expanding-and-colapsing-xml-tags-in-vim-xml-parsing
+"
+" The feature you need is called 'folding'.
+"
+" Basically, you tell Vim to use one of its available 'foldmethod' and manage
+" each line's 'foldlevel' with commands like za, zr or zM. You can find all
+" the details in :help folding.
+"
+" Adding these lines to your vimrc should provide a good starting point:
+"
+augroup XML
+  autocmd!
+  autocmd FileType xml setlocal foldmethod=indent foldlevelstart=999 foldminlines=0
+augroup END
+"
+" With these settings, all folds should be open when you load a file,
+" the fold level of each line should be derived from its indentation
+" and you should be able to fold away single lines.
+"
+" Use zm to fold more, zr to fold less, zc to close a fold, zo to open
+" it, za to toggle between those two states, zM to close every fold,
+" zR to open them and so on…
+"
+" Documentation:
+"
+"   :help folding
+"   :help 'foldmethod'
+"   :help 'foldlevelstart'
+"   :help 'foldminlines'
+"
+
+
+
+
+
+
