@@ -8,7 +8,7 @@ export PATH=/home/kmf76/gits/task/src/:$PATH
 export PATH=/home/kmf76/.local/bin:$PATH
 
 # Anaconda
-export PATH="/home/kmf76/anaconda2/bin:$PATH"
+export PATH="/home/kmf76/miniconda2/bin:$PATH"
 # Adding an alias for P-wave receiver function research
 alias saP="source activate Pwave"
 
