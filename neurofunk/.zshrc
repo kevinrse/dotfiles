@@ -6,7 +6,9 @@ export PATH="/usr/local/Geopsy.org/bin:$PATH"
 echo neurofunk
 
 # Miniconda
-source /home/kmf76/miniconda2/etc/profile.d/conda.sh
+# source /home/kmf76/miniconda2/etc/profile.d/conda.sh
+# The above is now managed by a conda init script; see block of code in main .zshrc file.
+#
 # Adding an alias for P-wave receiver function research
 alias saP="conda activate Pwave"
 alias caa="conda activate arts"

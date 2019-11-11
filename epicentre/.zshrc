@@ -1,4 +1,4 @@
-# machine-specific file: hypocentre
+# machine-specific file: epicentre
 
 
 # this is needed on hypocentre because I installed taskWarrior locally without admin privileges.
@@ -15,4 +15,5 @@ export PATH=/home/kmf76/.local/bin:$PATH
 alias saP="source activate Pwave"
 
 # KF added Conda 2018-07 - at the moment am solely using it for git-annex. Using new environment "KFdefault"
-source activate KFdefault
+# source activate KFdefault
+conda activate Pwave
